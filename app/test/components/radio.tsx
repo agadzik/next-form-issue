@@ -10,12 +10,12 @@ export function Radio({ name, value }: RadioProps): JSX.Element {
   const searchParams = useSearchParams();
   const defaultChecked = searchParams?.get(name) === value;
 
-  console.log({
-    name,
-    value,
-    searchParams: Object.fromEntries(searchParams?.entries() ?? []),
-    defaultChecked,
-  });
+  // console.log({
+  //   name,
+  //   value,
+  //   searchParams: Object.fromEntries(searchParams?.entries() ?? []),
+  //   defaultChecked,
+  // });
 
   return (
     <input
